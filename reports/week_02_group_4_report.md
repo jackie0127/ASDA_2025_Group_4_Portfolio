@@ -24,7 +24,7 @@
 
 ---
 
-## 3. Descriptive statistics 
+## 3. Descriptive statistics **(STEFAN SMID)**
 
 ### Numeric columns
 
