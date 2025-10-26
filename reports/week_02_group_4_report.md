@@ -2,17 +2,37 @@
 
 ## 1. Dataset Overview 
 
+first dataset (earthquake) 
+
 | Item | Description |
 | :--- | :--- |
-| Dataset name | |
-| Number of rows | |
-| Number of columns | |
-| Format file (.csv, .txt, etc) | |
-| Authors of the dataset | |
-| Source (name) | |
-| Source (link) | |
+| Dataset name |GEOFON Earthquake event catalogue (up to 2025-10-21, 1796 records) |
+| Number of rows |1796|
+| Number of columns |15 |
+| Format file (.csv, .txt, etc) |.csv |
+| Authors of the dataset |GFZ Helmholtz Centre for Geosciences, Potsdam |
+| Source (name) |GEOFON |
+| Source (link) |https://geofon.gfz.de/fdsnws/event/1/query?end=2025-10-21&limit=1796&format=csv |
 
 **Short description (what is it about?)** 
+
+This dataset contains a subset of global earthquake events recorded by the GEOFON Seismic Network and retrieved via the FDSNWS Event Service (Federation of Digital Seismograph Networks Web Services). The dataset includes 1796 earthquake records collected up to October 21, 2025. 
+
+second dataset (weather)
+
+| Item | Description |
+| :--- | :--- |
+| Dataset name |Weather prediction |
+| Number of rows |1461 |
+| Number of columns |6 |
+| Format file (.csv, .txt, etc) |.csv |
+| Authors of the dataset |Ananth R (Kaggle user) |
+| Source (name) |Kaggle |
+| Source (link) |https://www.kaggle.com/datasets/ananthr1/weather-prediction/data |
+
+**Short description (what is it about?)** 
+
+This dataset contains daily weather data from Seattle, including precipitation, maximum and minimum temperature, and wind speed. It is used to predict the weather condition such as drizzle, rain, sun, snow, or fog.
 
 ---
 
