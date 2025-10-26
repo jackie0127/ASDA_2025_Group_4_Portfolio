@@ -67,12 +67,12 @@
 
 | Item | Description |
 | :--- | :--- |
-| **Does the dataset contain unnecessary columns? Which?** | |
-| **Do the data types correspond to the columns?** | |
-| **Is the labelling of the columns appropriate?** | |
-| **Are there mixed values in column (e.g., number and characters)?** | |
-| **Are string column clean?** | |
-| **Does the dataset look machine generated?** | |
+| **Does the dataset contain unnecessary columns? Which?** | Yes, multiple columns are not filled with data: "Unnamed: 0" is a duplicate of the row index; "Author", "Catalog" and "MagAuthor" are completely empty. "EventType" is mostly empty. |
+| **Do the data types correspond to the columns?** | Mostly. Only the time column has an incorret datatype (object instead of datetime).|
+| **Is the labelling of the columns appropriate?** | The Column "Unnamed: 0" is not named appropriate.|
+| **Are there mixed values in column (e.g., number and characters)?** | No |
+| **Are string column clean?** | Yes |
+| **Does the dataset look machine generated?** | No |
 | **Other** | |
 
 ---
