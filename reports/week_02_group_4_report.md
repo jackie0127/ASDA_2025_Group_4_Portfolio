@@ -47,7 +47,7 @@ This dataset contains daily weather data from Seattle, including precipitation, 
 ## 3. Descriptive statistics **(STEFAN SMID)**
 
 ### Numeric columns
-
+#### earthquake:
 |  | Unnamed: 0 | Latitude | Longitude | Depth/km | Author | Catalog | Magnitude | MagAuthor |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | count | 1796.0 | 1796.0 | 1796.0 | 1796.0 | 0.0 | 0.0 | 1796.0 | 0.0 |
@@ -59,14 +59,36 @@ This dataset contains daily weather data from Seattle, including precipitation, 
 | 75% | 1346.25 | 51.73625 | 159.235 | 55.025 | NaN | NaN | 5.11 | NaN |
 | max | 1795.0 | 84.841 | 179.969 | 630.7 | NaN | NaN | 7.79 | NaN |
 
-### Categorical/object columns
+#### weather:
+|  | precipitation | temp\_max | temp\_min | wind |
+| :--- | :--- | :--- | :--- | :--- |
+| count | 1461.0 | 1461.0 | 1461.0 | 1461.0 |
+| mean | 3.02943189596167 | 16.43908281998631 | 8.234770704996578 | 3.24113620807666 |
+| std | 6.680194322314738 | 7.349758097360177 | 5.023004179961266 | 1.4378250588746193 |
+| min | 0.0 | -1.6 | -7.1 | 0.4 |
+| 25% | 0.0 | 10.6 | 4.4 | 2.2 |
+| 50% | 0.0 | 15.6 | 8.3 | 3.0 |
+| 75% | 2.8 | 22.2 | 12.2 | 4.0 |
+| max | 55.9 | 35.6 | 18.3 | 9.5 |
 
+
+### Categorical/object columns
+#### earthquake:
 |  | #EventID | Time | Contributor | ContributorID | MagType | EventLocationName | EventType |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | count | 1796 | 1796 | 1796 | 1796 | 1796 | 1796 | 7 |
 | unique | 1796 | 1796 | 1 | 1796 | 5 | 255 | 3 |
 | top | gfz2025upgl | 2025-10-20T23:00:55.01 | GFZ | gfz2025upgl | mb | Off East Coast of Kamchatka | quarry blast |
 | freq | 1 | 1 | 1796 | 1 | 1457 | 358 | 3 |
+
+#### weather:
+|  | date | weather |
+| :--- | :--- | :--- |
+| count | 1461 | 1461 |
+| unique | 1461 | 5 |
+| top | 2012-01-01 | rain |
+| freq | 1 | 641 |
+
 
 ---
 
