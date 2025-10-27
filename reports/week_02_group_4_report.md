@@ -36,11 +36,38 @@ This dataset contains daily weather data from Seattle, including precipitation, 
 
 ---
 
-## 2. Structure of the dataset 
+## 2. Structure of the dataset (Zeyad Kassem)
+#### earthquake:
 
-| Column name | Data type | Non-null count | Unique values | Example values |
-| :--- | :--- | :--- | :--- | :--- |
-| | | | | |
+|  | Column name | Data type | Non-null count | Unique values | Example values |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 0 | Unnamed: 0 | int64 | 1796 | 1796 | \[0 1 2\] |
+| 1 | #EventID | object | 1796 | 1796 | \['gfz2025upgl' 'gfz2025upfw' 'gfz2025upfm'\] |
+| 2 | Time | object | 1796 | 1796 | \['2025-10-20T23:00:55.01' '2025-10-20T22:43:15.43'<br/> '2025-10-20T22:31:56.23'\] |
+| 3 | Latitude | float64 | 1796 | 1716 | \[44.996 53.012 -6.891\] |
+| 4 | Longitude | float64 | 1796 | 1732 | \[ 14.954 159.748 125.707\] |
+| 5 | Depth/km | float64 | 1796 | 620 | \[ 10.   52.6 510.3\] |
+| 6 | Author | float64 | 0 | 0 | \[\] |
+| 7 | Catalog | float64 | 0 | 0 | \[\] |
+| 8 | Contributor | object | 1796 | 1 | \['GFZ'\] |
+| 9 | ContributorID | object | 1796 | 1796 | \['gfz2025upgl' 'gfz2025upfw' 'gfz2025upfm'\] |
+| 10 | MagType | object | 1796 | 5 | \['M' 'mb' 'Mw'\] |
+| 11 | Magnitude | float64 | 1796 | 239 | \[3.1  5.03 4.45\] |
+| 12 | MagAuthor | float64 | 0 | 0 | \[\] |
+| 13 | EventLocationName | object | 1796 | 255 | \['Adriatic Sea' 'Near East Coast of Kamchatka' 'Banda Sea'\] |
+| 14 | EventType | object | 7 | 3 | \['quarry blast' 'earthquake' 'induced or triggered event'\] |
+
+#### weather:
+
+|  | Column name | Data type | Non-null count | Unique values | Example values |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 0 | date | object | 1461 | 1461 | \['2012-01-01' '2012-01-02' '2012-01-03'\] |
+| 1 | precipitation | float64 | 1461 | 111 | \[ 0.  10.9  0.8\] |
+| 2 | temp\_max | float64 | 1461 | 67 | \[12.8 10.6 11.7\] |
+| 3 | temp\_min | float64 | 1461 | 55 | \[5.  2.8 7.2\] |
+| 4 | wind | float64 | 1461 | 79 | \[4.7 4.5 2.3\] |
+| 5 | weather | object | 1461 | 5 | \['drizzle' 'rain' 'sun'\] |
+
 
 ---
 
