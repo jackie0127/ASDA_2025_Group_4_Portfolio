@@ -131,7 +131,7 @@ second dataset (weather)
 | **Other** | |
 
 ---
-# GEOFON data set
+## GEOFON data set
 ## 5. Overall assessment 
 **Is it worth it to further analyze the dataset?** 
 **Yes.**  
@@ -145,7 +145,7 @@ This dataset has high value for further analysis because:
 
 **What possible analysis can be performed?** 
 
-Possible Analysis
+**Possible Analysis**
 
 - **Temporal Analysis:** frequency/time trends, daily/weekly patterns, forecasting.
 - **Spatial Analysis:** hotspot mapping, regional activity, clustering.
@@ -156,21 +156,18 @@ Possible Analysis
 
 
 ## 6. Next steps
-
-## GEO DataSet
-
-#### Handling Missing Values
+**Handling Missing Values**
 
 - Remove fully empty columns: `Author`, `Catalog`, `MagAuthor` (100% missing).
 - Drop (or impute) `EventType` (99.6% missing).
 - Essential columns need no missing value treatment.
 
-#### Removing Duplicates
+**Removing Duplicates**
 
 - No duplicates found (by row or EventID).
 - No action needed.
 
-#### Cleaning Columns
+**Cleaning Columns**
 
 - Drop: `Unnamed: 0` (row index).
 - Convert: `Time` to datetime format.
@@ -178,7 +175,7 @@ Possible Analysis
 - Create: Magnitude categories if needed.
 - Retain: Essential columns for analysis.
 
-#### Creating Dataframe Subsets
+**Creating Dataframe Subsets**
 
 - High-magnitude (`Magnitude >= 6.0`)
 - Shallow earthquakes (`Depth ≤ 70 km`)
@@ -186,20 +183,19 @@ Possible Analysis
 - Regional focus (e.g. Kamchatka)
 - Magnitude type subset (`mb`, `Mw`)
 - Depth category (shallow/intermediate/deep)
+---
+## Seattle Weather Dataset Analysis
 
-# Seattle Weather Dataset Analysis
+**Is it worth further analyzing the dataset?**
 
-## 1. Is it worth further analyzing the dataset?
-
-**Yes.**  
-This weather dataset is a solid candidate for further analysis because:
+**Yes.** This weather dataset is a solid candidate for further analysis because:
 - All columns are 100% complete.
 - No duplicate records.
 - Clean structure, consistent types.
 - Represents 4 years of daily weather (2012–2015, 1,461 days).
 - Core attributes cover essential climate variables (precipitation, min/max temp, wind, weather type).
 
-## 2. Possible Analysis
+**Possible Analysis**
 
 - **Temporal Analysis:** trends, seasonality, year-to-year or month-to-month climate variations.
 - **Weather Event Analysis:** frequency and extremity of rain, fog, snow, drizzle, sun.
@@ -211,30 +207,26 @@ This weather dataset is a solid candidate for further analysis because:
 
 ## 6. Next Steps
 
-### Handling Missing Values
+**Handling Missing Values**
 
 - No missing values in any column.
 - No action needed.
 
-### Removing Duplicates
+**Removing Duplicates**
 
 - No duplicate rows present.
 - No action needed.
 
-### Cleaning the Columns
+**Cleaning the Columns**
 
 - **Convert:** `date` column to datetime format for better temporal analysis.
 - **Standardize:** Check for consistency in `weather` naming if expanding.
 - **Retain:** All variables are valuable for analysis; no columns to remove.
 
-### Creating Dataframe Subsets
+**Creating Dataframe Subsets**
 
 - Precipitation event analysis (`precipitation > 0` vs. dry days).
 - Temperature extremes (`temp_max > 30` for heat waves, `temp_min < 0` for freezing spells).
 - Seasonal/Monthly subsets.
 - Subset by specific `weather` types (e.g., only "snow" or "fog" days).
 - High wind events (`wind` above top quartile).
-
----
-This dataset is ready for in-depth statistical/weather pattern analysis.
-
