@@ -94,14 +94,30 @@ This dataset contains daily weather data from Seattle, including precipitation, 
 
 ## 3. Missing values and duplicates
 
+Missing values and duplicates: GEOFON Earthquake Data (eq_df)
+------------------------------------------------------------
 | Column name | Missing count | % Missing |
-| :--- | :--- | :--- |
-| | | |
+|-------------|---------------|-----------|
+| Author      | 1796          | 100.0     |
+| Catalog     | 1796          | 100.0     |
+| MagAuthor   | 1796          | 100.0     |
+| EventType   | 1789          | 99.61     |
 
-**Total missing values:**   
-**Percentage of dataset affected:**   
-**Duplicated rows found:**   
-**Percentage of rows in dataset affected:**   
+Total missing values: 7177
+Percentage of dataset affected: 26.64%
+Duplicated rows found: 0
+Percentage of rows in dataset affected: 0.00%
+
+Missing values and duplicates: Seattle Weather Data (weather_df)
+------------------------------------------------------------
+| Column name | Missing count | % Missing |
+|-------------|---------------|-----------|
+|             |               |           |
+
+Total missing values: 0
+Percentage of dataset affected: 0.00%
+Duplicated rows found: 0
+Percentage of rows in dataset affected: 0.00%
 
 ---
 
